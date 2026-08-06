@@ -102,7 +102,3 @@ ping <target>
 - A ping to `1.1.1.1` from an internal host confirms Internet reachability through R1.
 
 Screenshots: see [`/screenshots`](screenshots)
-
-## 🔧 Key Takeaway
-
-A multilayer switch with `ip routing` enabled and per-VLAN SVIs can fully replace a router's ROAS role for inter-VLAN traffic. This frees the router to handle only the point-to-point uplink and external/Internet routing, removing the ROAS trunk as a potential bottleneck between the router and access layer.
