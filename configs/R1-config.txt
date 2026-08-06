@@ -1,0 +1,15 @@
+! R1 - relevant configuration excerpt
+! Point-to-point Layer 3 link to SW2 (replaces ROAS subinterfaces)
+
+no interface g0/0.10
+no interface g0/0.20
+no interface g0/0.30
+
+interface g0/0
+ ip address 10.0.0.194 255.255.255.252
+ no shutdown
+
+! Static return routes to VLAN networks behind SW2 (next hop = SW2's G1/0/1, 10.0.0.193)
+ip route 10.0.0.0   255.255.255.192 10.0.0.193
+ip route 10.0.0.64  255.255.255.192 10.0.0.193
+ip route 10.0.0.128 255.255.255.192 10.0.0.193

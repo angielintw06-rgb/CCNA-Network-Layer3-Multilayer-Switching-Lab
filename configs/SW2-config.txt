@@ -1,0 +1,24 @@
+! SW2 (3650-24PS) - relevant configuration excerpt
+! Routed port to R1 + SVIs for inter-VLAN routing
+
+interface g1/0/1
+ no switchport
+ ip address 10.0.0.193 255.255.255.252
+ no shutdown
+
+ip routing
+
+interface vlan10
+ ip address 10.0.0.62 255.255.255.192
+ no shutdown
+
+interface vlan20
+ ip address 10.0.0.126 255.255.255.192
+ no shutdown
+
+interface vlan30
+ ip address 10.0.0.190 255.255.255.192
+ no shutdown
+
+! Default route - next hop is R1's G0/0
+ip route 0.0.0.0 0.0.0.0 10.0.0.194
