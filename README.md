@@ -10,8 +10,6 @@ Starting from a working ROAS setup (SW1–SW2 connected via trunk, SW2–R1 conn
 
 ![Topology Diagram](topology.png)
 
-**Devices:** R1 (2911, edge router to Internet), SW1 (2960-24TT access switch), SW2 (3650-24PS multilayer switch), PC1–PC7
-
 ---
 
 ## 🖥️ IP Addressing
