@@ -86,14 +86,6 @@ Full configs: see [`/configs`](configs)
 
 ## ✅ Verification
 
-Commands used:
-```
-show ip interface brief
-show vlan brief
-show interfaces trunk
-show ip route
-ping <target>
-```
 
 - `show ip interface brief` on SW2 confirms each VLAN's SVI (VLAN 10, 20, 30) is **up/up**.
 - `show ip route` on SW2 shows the three connected VLAN subnets, the connected point-to-point network, and a static default route (`S*`) toward 10.0.0.194.
